@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exam.MainActivity"
+    android:background="#488AC7"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/lesson_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="8dp"/>
+    <TextView
+        android:id="@+id/text_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Exam Subject"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/Theme.AppCompat.Light.NoActionBar.X"/>
+
+    <LinearLayout
+        android:id="@+id/maths_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/text_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/maths"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maths"
+            android:layout_gravity="center_horizontal"
+            style="@style/Theme.AppCompat.Light.NoActionBar.X"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/science_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_white"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/text_label"
+        app:layout_constraintStart_toEndOf="@id/maths_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/science"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science"
+            android:layout_gravity="center_horizontal"
+            style="@style/Theme.AppCompat.Light.NoActionBar.X"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/android_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maths_quiz"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/android"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android "
+            android:layout_gravity="center_horizontal"
+            style="@style/Theme.AppCompat.Light.NoActionBar.X"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/java_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/maths_quiz"
+        app:layout_constraintStart_toEndOf="@id/android_quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/java"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:layout_gravity="center_horizontal"
+            style="@style/Theme.AppCompat.Light.NoActionBar.X"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

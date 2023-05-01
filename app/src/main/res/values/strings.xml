@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Online ExamApp</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="register_now"><u>New Member? Register</u></string>
+    <string name="login_now"><u>Already Have An Account? Login</u></string>
+</resources>
